@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2nn5zk');
+  src:  url('fonts/icomoon.eot?2nn5zk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2nn5zk') format('truetype'),
+    url('fonts/icomoon.woff?2nn5zk') format('woff'),
+    url('fonts/icomoon.svg?2nn5zk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dropdown:before {
+  content: "\e900";
+  color: #3b7adb;
+}
+.icon-phoneReview:before {
+  content: "\e901";
+  color: #639bee;
+}
+.icon-panorama:before {
+  content: "\e902";
+}
+.icon-ksort:before {
+  content: "\e903";
+  color: #4a90e2;
+}
+.icon-ksortup:before {
+  content: "\e904";
+  color: #4a90e2;
+}
+.icon-Rectangle-2:before {
+  content: "\e905";
+}
+.icon-Group:before {
+  content: "\e906";
+}
+.icon-Group1:before {
+  content: "\e907";
+}
+.icon-uniE908:before {
+  content: "\e908";
+}
+.icon-1:before {
+  content: "\e909";
+  color: #639bee;
+}
+.icon-2311:before {
+  content: "\e90a";
+}
+.icon-Vector:before {
+  content: "\e90b";
+}
+.icon-copy:before {
+  content: "\e90c";
+}
+.icon-12321:before {
+  content: "\e90d";
+}
+.icon-1231234:before {
+  content: "\e90e";
+}
+.icon-actual:before {
+  content: "\e90f";
+}
+.icon-Arrow:before {
+  content: "\e910";
+}
+.icon-call:before {
+  content: "\e911";
+}
+.icon-eye:before {
+  content: "\e912";
+}
+.icon-facebook:before {
+  content: "\e913";
+}
+.icon-Fill-4:before {
+  content: "\e914";
+}
+.icon-Group-5:before {
+  content: "\e915";
+}
+.icon-location1:before {
+  content: "\e916";
+}
+.icon-message:before {
+  content: "\e917";
+}
+.icon-odnoklas:before {
+  content: "\e918";
+}
+.icon-phone:before {
+  content: "\e919";
+}
+.icon-Star-Copy-12:before {
+  content: "\e91a";
+}
+.icon-vk:before {
+  content: "\e91b";
+}

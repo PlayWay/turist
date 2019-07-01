@@ -1,0 +1,32 @@
++b.popup--cabinet.sl--scrollable
+    +e.body
+        +e.form.form__.--cabinet
+            +e.body--cabinet.--popup
+                +e.title Вход для отельера
+                +e.line
+                    +e.LABEL.field-name(for="sign-email") Email
+                    +e.input.input--form-popup.--black
+                        input(placeholder="example@gmail.com" id="login-email")
+                +e.line--forgot
+                    +e.LABEL.field-name(for="sign-password") Пароль
+                    +e.A.forgot(href="#")
+                        span Забыли пароль?
+                    +e.input--password.input--form-popup.--black
+                        input(placeholder="Пароль")
+                        button.button(type="button")
+                +e.BUTTON.button--login.button--blue Войти
+                +e.BUTTON.button--call-registration.button Зарегистрироваться
+            +e.BUTTON.button--close.button--close(type="button")
+                span
+            +e.preloader.preloader__
+                +e.spinner.spinner__
+                    +e.line
+                        +e.cog
+                            +e.cog-inner--left
+                        +e.ticker
+                            +e.cog-inner--center
+                        +e.cog
+                            +e.coh-inner--right
+            +e.response
+    +e.close
+

@@ -1,0 +1,226 @@
+.footer {
+    padding-top: 54px;
+    background-color: #1C2D42;
+    color: $white;
+    position: relative;
+
+    &.none {
+        display: none;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__logo {
+        img {
+            width: 210px;
+        }
+    }
+
+    &__text {
+        margin-top: 43px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        margin-bottom: 35px;
+        list-style: none;
+    }
+
+    &__item {
+        a {
+            color: $white;
+            font-size: 16px;
+            //border-bottom: 1px solid #fff;
+            text-decoration-line: underline;
+            line-height: 30px;
+        }
+
+        & + .footer__item {
+            margin-top: 14px;
+        }
+    }
+
+    &__socials {
+        margin-bottom: 45px;
+    }
+
+    &__social {
+        display: inline-block;
+
+        & + .footer__social {
+            margin-left: 10px;
+        }
+    }
+
+    &__policy {
+        border-top: 1px solid rgba($white,0.3);
+        padding: 21px 6.25% 9px 6.25%;
+    }
+
+    @media (min-width: 768px) {
+
+        &__text {
+            margin-top: 0;
+            max-width: 85%;
+        }
+
+        &__logo {
+            position: absolute;
+            left:span(1 of 14);
+            top: 51px;
+
+            img {
+                width: 222px;
+            }
+        }
+
+        &__body {
+            width: span(8 of 14);
+            margin-left:span(6 of 14);
+            margin-bottom: 60px;
+        }
+
+        &__list {
+            margin-bottom: 0;
+        }
+
+        &__socials {
+            position: absolute;
+            left: span(1 of 14);
+            top: 164px;
+        }
+
+        &__social {
+            & + .footer__social {
+                margin-left: 16px;
+            }
+        }
+
+        &__policy {
+            padding: 0px span(0.5 of 14) 15px span(0.5 of 14);
+
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        &__logo {
+            position: absolute;
+            left:span(0.6 of 8);
+            top: toRem(40);
+
+            img {
+                width: toRem(222);
+            }
+        }
+
+        &__body {
+            width: span(5.5 of 8);
+            margin-left:span(2.5 of 8);
+            margin-bottom: toRem(60);
+            font-size: 0;
+        }
+
+        &__text {
+            display: inline-block;
+            width: span(2.5 of 5.5);
+            vertical-align: top;
+        }
+
+        &__list {
+            display: inline-block;
+            width: span(2 of 5.5);
+            margin-left: span(1 of 5.5);
+            vertical-align: top;
+        }
+
+        &__item {
+            a {
+                font-size: toRem(16);
+                text-decoration-line: none;
+            }
+
+            & + .footer__item {
+                margin-top: toRem(15);
+            }
+        }
+
+        &__socials {
+            position: absolute;
+            left: span(0.6 of 8);
+            top: toRem(159);
+        }
+
+        &__social {
+            & + .footer__social {
+                margin-left: toRem(16);
+            }
+        }
+
+        &__policy {
+            padding: toRem(5) 1.66666667% toRem(20) 1.66666667%;
+        }
+
+        &__wrapper {
+            //padding: toRem(15) 1.66666667% toRem(20) 1.66666667%;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.social {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:before {
+        font-family: icon;
+        color: $white;
+        position: absolute;
+        font-size: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &--vk {
+        background: #4A76A8;
+
+        &:before {
+            content: '\e95f';
+        }
+    }
+
+    &--facebook {
+        background: #4266B2;
+
+        &:before {
+            content: '\e956';
+        }
+    }
+
+    &--odnoklassniki {
+        background: #EE810A;
+
+        &:before {
+            content: '\e95b';
+        }
+    }
+
+    @media (min-width: 1200px) {
+        width:toRem(44);
+        height:toRem(44);
+
+        &:before {
+            font-size: toRem(20);
+        }
+    }
+}

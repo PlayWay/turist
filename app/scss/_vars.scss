@@ -1,0 +1,23 @@
+$susy: (
+        'columns': susy-repeat(14),
+        'gutters': 0,
+        'spread': 'narrow',
+        'container-spread': 'narrow',
+);
+
+$level-1: 1;
+
+$grey: #cccccc;//ГДЕ ТО НАДО ПРОСТАВИТЬ 0,5!!!!
+$white: #fff;
+$green: #4CAF50;
+$blue: #3B7ADB;
+$iconBlue: #4A8FE3;
+$blueLetter: #6BA3F7;
+$black: #3C3C3C;
+$yellow: #FFE082;
+$opacityBlack: rgba(35, 35, 35, 0.5024);
+
+@function toRem($size) {
+    $remSize: $size / 12 + rem + ' ';
+    @return #{$remSize};
+}

@@ -1,0 +1,20 @@
+@mixin newFont($family,$pathName) {
+    @font-face {
+        font-family: '#{$family}';
+        src: url('/fonts/#{$pathName}.eot');
+        src: url('/fonts/#{$pathName}.eot?iefix') format('emdded-opentype'),
+        url('/fonts/#{$pathName}.woff2') format('woff2'),
+        url('/fonts/#{$pathName}.woff') format('woff'),
+        url('/fonts/#{$pathName}.ttf') format('truetype'),
+        url('/fonts/#{$pathName}.svg##{$pathName}') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@include newFont('reg','OpenSans-Regular');
+@include newFont('semiBold','OpenSans-SemiBold');
+@include newFont('bold','OpenSans-Bold');
+
+@include newFont('icon','icomoon');
+@include newFont('benefits','icons-benefits');

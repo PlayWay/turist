@@ -1,0 +1,144 @@
+- var cityCard = [{letter: 'A', city: ['Адыгея','Астрахань']},{letter: 'Б', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'В', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']},{letter: 'A', city: ['Адыгея','Астрахань','Армавир','Архангельск']}];
+
++b.HEADER.header
+    +e.container.container
+        +e.line
+            +e.BUTTON.button--hamburger.button.--hamburger
+                span
+                span
+                span
+            +e.A.logo(href="/index.html")
+                img(src="/img/logo.svg")
+            +e.BUTTON.button--search.button.--search
+        +e.menu
+            +e.wrapper
+                +e.center
+                    +e.nav.nav__
+                        +e.A.logo(href="/index.html")
+                            img(src="/img/logo.svg")
+                        +e.UL.list.sl--scrollable
+                            +e.LI.item--toggle
+                                +e.BUTTON.button--toggle.button(type="button") Города
+                                +e.submenu
+                                    +e.tools
+                                        +e.input--search-menu.input--search
+                                            input(placeholder="Рязань")
+                                        +e.views
+                                            span Показать
+                                            +e.BUTTON.button--sort-menu.--submenu(type="button") А - Я
+                                            +e.BUTTON.button--district.--submenu(type="button") Округи
+                                    +e.UL.sublist--groups
+                                        each card in cityCard
+                                            +e.LI.group
+                                                +e.letter= card.letter
+                                                +e.UL.group-list
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[0]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[1]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[2]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[3]
+                                        +e.LI.link--all-cities
+                                            a.link--underline-blue(href="all-hotels.html") Все города
+                            +e.LI.item--toggle
+                                +e.BUTTON.button--toggle.button(type="button") Курорты
+                                +e.submenu
+                                    +e.tools
+                                        +e.input--search-menu.input--search
+                                            input(placeholder="Рязань")
+                                        +e.views
+                                            span Показать
+                                            +e.BUTTON.button--sort-menu.--submenu(type="button") А - Я
+                                            +e.BUTTON.button--district.--submenu(type="button") Округи
+                                    +e.UL.sublist--groups
+                                        each card in cityCard
+                                            +e.LI.group
+                                                +e.letter= card.letter
+                                                +e.UL.group-list
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[0]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[1]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[2]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[3]
+                                        +e.LI.link--all-cities.link--underline-blue
+                                            a.link--underline-blue(href="all-hotels.html") Все города
+                            +e.LI.item--toggle
+                                +e.BUTTON.button--toggle.button(type="button") Турбазы
+                                +e.submenu
+                                    +e.tools
+                                        +e.input--search-menu.input--search
+                                            input(placeholder="Рязань")
+                                        +e.views
+                                            span Показать
+                                            +e.BUTTON.button--sort-menu.--submenu(type="button") А - Я
+                                            +e.BUTTON.button--district.--submenu(type="button") Округи
+                                    +e.UL.sublist--groups
+                                        each card in cityCard
+                                            +e.LI.group
+                                                +e.letter= card.letter
+                                                +e.UL.group-list
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[0]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[1]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[2]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[3]
+                                        +e.LI.link--all-cities.link--underline-blue
+                                            A.link--underline-blue(href="all-hotels.html") Все города
+                            +e.LI.item--toggle
+                                +e.BUTTON.button--toggle.button(type="button") Санатории
+                                +e.submenu
+                                    +e.tools
+                                        +e.input--search-menu.input--search
+                                            input(placeholder="Рязань")
+                                        +e.views
+                                            span Показать
+                                            +e.BUTTON.button--sort-menu.--submenu(type="button") А - Я
+                                            +e.BUTTON.button--district.--submenu(type="button") Округи
+                                    +e.UL.sublist--groups
+                                        each card in cityCard
+                                            +e.LI.group
+                                                +e.letter= card.letter
+                                                +e.UL.group-list
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[0]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[1]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[2]
+                                                    +e.LI.group-item
+                                                        +e.A.link(href="#")
+                                                            span= card.city[3]
+                                        +e.LI.link--all-cities.link--underline-blue
+                                            A.link--underline-blue(href="all-hotels.html") Все города
+                            +e.LI.item
+                                +e.A.link--menu(href="#")
+                                    span Блог
+                +e.entry
+                    +e.BUTTON.button--entry(type="button") Вход для отельеров
+                    +e.BUTTON.button--blue-search.button--search(type="button") Искать
+
+
+

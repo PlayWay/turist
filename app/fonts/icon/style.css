@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qjcpe7');
+  src:  url('fonts/icomoon.eot?qjcpe7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qjcpe7') format('truetype'),
+    url('fonts/icomoon.woff?qjcpe7') format('woff'),
+    url('fonts/icomoon.svg?qjcpe7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-L:before {
+  content: "\e960";
+}
+.icon-M:before {
+  content: "\e961";
+}
+.icon-S:before {
+  content: "\e962";
+}
+.icon-wave:before {
+  content: "\e963";
+}
+.icon-dropdown:before {
+  content: "\e944";
+}
+.icon-panorama:before {
+  content: "\e945";
+}
+.icon-ksort:before {
+  content: "\e946";
+}
+.icon-ksortup:before {
+  content: "\e947";
+}
+.icon-Rectangle-2:before {
+  content: "\e948";
+}
+.icon-Group:before {
+  content: "\e949";
+}
+.icon-Group1:before {
+  content: "\e94a";
+}
+.icon-uniE908:before {
+  content: "\e94b";
+}
+.icon-1:before {
+  content: "\e94c";
+}
+.icon-2311:before {
+  content: "\e94d";
+}
+.icon-Vector:before {
+  content: "\e94e";
+}
+.icon-copy:before {
+  content: "\e94f";
+}
+.icon-12321:before {
+  content: "\e950";
+}
+.icon-1231234:before {
+  content: "\e951";
+}
+.icon-actual:before {
+  content: "\e952";
+}
+.icon-Arrow:before {
+  content: "\e953";
+}
+.icon-call:before {
+  content: "\e954";
+}
+.icon-eye:before {
+  content: "\e955";
+}
+.icon-facebook:before {
+  content: "\e956";
+}
+.icon-Fill-4:before {
+  content: "\e957";
+}
+.icon-Group-5:before {
+  content: "\e958";
+}
+.icon-location1:before {
+  content: "\e959";
+}
+.icon-message:before {
+  content: "\e95a";
+}
+.icon-odnoklas:before {
+  content: "\e95b";
+}
+.icon-phone:before {
+  content: "\e95c";
+}
+.icon-Star-Copy-12:before {
+  content: "\e95d";
+}
+.icon-phoneReview:before {
+  content: "\e95e";
+}
+.icon-vk:before {
+  content: "\e95f";
+}
+.icon-Paking:before {
+  content: "\e92b";
+}
+.icon-animator:before {
+  content: "\e900";
+}
+.icon-assembly-hall:before {
+  content: "\e905";
+}
+.icon-waterpool:before {
+  content: "\e906";
+}
+.icon-billiard:before {
+  content: "\e90a";
+}
+.icon-children-room:before {
+  content: "\e90c";
+}
+.icon-children-field:before {
+  content: "\e913";
+}
+.icon-massage-table:before {
+  content: "\e914";
+}
+.icon-club:before {
+  content: "\e920";
+}
+.icon-sanatoruim:before {
+  content: "\e925";
+}
+.icon-canteen:before {
+  content: "\e933";
+}
+.icon-tv:before {
+  content: "\e93a";
+}
+.icon-fitness:before {
+  content: "\e93b";
+}
+.icon-teapot:before {
+  content: "\e941";
+}
+.icon-bowling:before {
+  content: "\e90d";
+}
+.icon-uniE911:before {
+  content: "\e911";
+}
+.icon-Room-service:before {
+  content: "\e901";
+}
+.icon-wifi:before {
+  content: "\e902";
+}
+.icon-tickets:before {
+  content: "\e903";
+}
+.icon-water-park:before {
+  content: "\e904";
+}
+.icon-banqueting-hall:before {
+  content: "\e907";
+}
+.icon-ATM:before {
+  content: "\e908";
+}
+.icon-Bar:before {
+  content: "\e909";
+}
+.icon-business-center:before {
+  content: "\e90b";
+}
+.icon-buffet:before {
+  content: "\e90e";
+}
+.icon-bath:before {
+  content: "\e90f";
+}
+.icon-hygiene-products:before {
+  content: "\e910";
+}
+.icon-deposit-storage:before {
+  content: "\e912";
+}
+.icon-shower:before {
+  content: "\e915";
+}
+.icon-conversation-hall:before {
+  content: "\e916";
+}
+.icon-storage:before {
+  content: "\e917";
+}
+.icon-Cafe:before {
+  content: "\e918";
+}
+.icon-cinema:before {
+  content: "\e919";
+}
+.icon-air-condition:before {
+  content: "\e91a";
+}
+.icon-conference-hall:before {
+  content: "\e91b";
+}
+.icon-kitchen:before {
+  content: "\e91c";
+}
+.icon-ski-storage:before {
+  content: "\e91d";
+}
+.icon-cooking-shop:before {
+  content: "\e91e";
+}
+.icon-grill:before {
+  content: "\e91f";
+}
+.icon-medical-services:before {
+  content: "\e921";
+}
+.icon-mini-bar:before {
+  content: "\e922";
+}
+.icon-disabled:before {
+  content: "\e923";
+}
+.icon-no-smoking:before {
+  content: "\e924";
+}
+.icon-money-change:before {
+  content: "\e926";
+}
+.icon-health-center:before {
+  content: "\e927";
+}
+.icon-heating:before {
+  content: "\e928";
+}
+.icon-safety-parking:before {
+  content: "\e929";
+}
+.icon-barber-shop:before {
+  content: "\e92a";
+}
+.icon-towel:before {
+  content: "\e92c";
+}
+.icon-cutlery:before {
+  content: "\e92d";
+}
+.icon-washing-machine:before {
+  content: "\e92e";
+}
+.icon-sport-equipment:before {
+  content: "\e92f";
+}
+.icon-international-registration:before {
+  content: "\e930";
+}
+.icon-restaurant:before {
+  content: "\e931";
+}
+.icon-hair-dryer:before {
+  content: "\e932";
+}
+.icon-sauna:before {
+  content: "\e934";
+}
+.icon-safe:before {
+  content: "\e935";
+}
+.icon-outfit:before {
+  content: "\e936";
+}
+.icon-own-beach:before {
+  content: "\e937";
+}
+.icon-sunroom:before {
+  content: "\e938";
+}
+.icon-sport-field:before {
+  content: "\e939";
+}
+.icon-tennis:before {
+  content: "\e93c";
+}
+.icon-transfer:before {
+  content: "\e93d";
+}
+.icon-gym:before {
+  content: "\e93e";
+}
+.icon-translator-service:before {
+  content: "\e93f";
+}
+.icon-iron:before {
+  content: "\e940";
+}
+.icon-fridge:before {
+  content: "\e942";
+}
+.icon-souvenir:before {
+  content: "\e943";
+}

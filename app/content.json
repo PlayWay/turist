@@ -1,0 +1,44 @@
+{
+  "hotels":[
+    {
+      "photo": "/img/hotel/1.jpg",
+      "title": "Radisson Blu Resort & Ca",
+      "address": "г. Москва, 300м от центра",
+      "benefits": ["Wi-Fi","парковка","бассейн"],
+      "phone": "+7 (844) 245–95–04",
+      "number": "5",
+      "numberText": "Отлично (55)",
+      "price": "от 3400р"
+    },
+    {
+      "photo": "/img/hotel/1.jpg",
+      "title": "Radisson Blu Resort & Ca",
+      "address": "г. Москва, 300м от центра",
+      "benefits": ["Wi-Fi","парковка","бассейн"],
+      "phone": "+7 (844) 245–95–04",
+      "number": "5",
+      "numberText": "Отлично (55)",
+      "price": "от 3400р"
+    },
+    {
+      "photo": "/img/hotel/1.jpg",
+      "title": "Radisson Blu Resort & Ca",
+      "address": "г. Москва, 300м от центра",
+      "benefits": ["Wi-Fi","парковка","бассейн"],
+      "phone": "+7 (844) 245–95–04",
+      "number": "5",
+      "numberText": "Отлично (55)",
+      "price": "от 3400р"
+    },
+    {
+      "photo": "/img/hotel/1.jpg",
+      "title": "Radisson Blu Resort & Ca",
+      "address": "г. Москва, 300м от центра",
+      "benefits": ["Wi-Fi","парковка","бассейн"],
+      "phone": "+7 (844) 245–95–04",
+      "number": "5",
+      "numberText": "Отлично (55)",
+      "price": "от 3400р"
+    }
+  ]
+}

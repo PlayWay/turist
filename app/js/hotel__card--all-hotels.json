@@ -1,0 +1,35 @@
+[
+  {
+    "coordinate": [48.786293, 44.751867],
+    "imageSrc": "/img/index/hotel-card.jpg",
+    "title": "Radisson Blu Resort & Carreresd",
+    "address": "г. Москва, 300м от центра",
+    "benefits": ["Wi-Fi","парковка","бассейн"],
+    "phone": "+7 (844) 245–95–04",
+    "score": "5",
+    "textScore": "Отлично(55)",
+    "price": "3400"
+  },
+  {
+    "coordinate": [48.806493, 44.751867],
+    "imageSrc": "/img/index/hotel-card.jpg",
+    "title": "Radisson Blu Resort & Ca",
+    "address": "г. Москва, 300м от центра",
+    "benefits": ["Wi-Fi","парковка","бассейн"],
+    "phone": "+7 (844) 245–95–04",
+    "score": "5",
+    "textScore": "Отлично(55)",
+    "price": "554400"
+  },
+  {
+    "coordinate": [48.816593, 44.751867],
+    "imageSrc": "/img/index/hotel-card.jpg",
+    "title": "Radisson Blu Resort & Ca",
+    "address": "г. Москва, 300м от центра",
+    "benefits": ["Wi-Fi","парковка","бассейн"],
+    "phone": "+7 (844) 245–95–04",
+    "score": "5",
+    "textScore": "Отлично(55)",
+    "price": "5500"
+  }
+]

@@ -1,0 +1,745 @@
+.all-hotels {
+    padding-top: 60px;
+    font-size: 0;
+
+    &__map {
+        display: none;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__view {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+        background: #FFFFFF;
+        border-radius: 2px;
+        padding: 15px;
+    }
+
+    &.active {
+        &:before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+        &--one {
+            .hotels-cards__preloader {
+
+                .hotels-cards__item + .hotels-cards__item {
+                    margin-top: 10px;
+                }
+            }
+
+            .hotels-cards__item {
+                max-width: 100%;
+                min-width: 410px;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        &--two {
+            .hotels-cards__preloader {
+
+                .hotels-cards__item {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .hotels-cards__list {
+                column-count: 2;
+                column-gap: 10px;
+            }
+
+            .hotels-cards__item {
+                display: inline-block;
+                min-width: auto;
+                width: 100%;
+                margin-bottom: 10px;
+                border-radius: 2px;
+
+                & + .hotels-cards__item {
+                    margin-top: 0;
+                }
+            }
+
+            .hotel__photo {
+                display: block;
+                width: 100%;
+                height: 15.625vw;
+            }
+
+            .hotel__content {
+                width: 100%;
+                height: auto;
+                max-height: none;
+            }
+
+            .hotel__info-container {
+                position: relative;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+
+        &--map {
+            .all-hotels__map {
+                display: inline-block;
+            }
+
+            .hotels-cards {
+                display: none;
+            }
+
+            .all-hotels__view {
+                display: block;
+            }
+
+            //.hotels-cards__list,.hotels-cards__head {
+            //    display: none;
+            //}
+            //
+            //.hotels-cards__wrapper {
+            //    padding: 0;
+            //}
+            //
+            //.hotels-cards__settings {
+            //    position: absolute;
+            //    left: 0;
+            //    top: 0;
+            //}
+        }
+
+        &__content-container {
+            display: inline-block;
+            box-sizing: border-box;
+            height: 100vh;
+            padding-top: 60px;
+            width: calc(100% - 246px);
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        &--one {
+            .hotels-cards__item {
+                min-width: toRem(410);
+                //max-height: toRem(137);
+            }
+
+
+        }
+
+        &--two {
+            .hotels-cards__list {
+                column-gap: toRem(10);
+            }
+
+            .hotels-cards__item {
+                margin-bottom: toRem(10);
+                border-radius: toRem(2);
+            }
+
+            .hotel__photo {
+                display: block;
+                width: 100%;
+                height: 10vw;
+            }
+        }
+
+        &--map {
+            .all-hotels__map {
+                display: inline-block;
+            }
+
+            .hotels-cards {
+                display: none;
+            }
+
+            .all-hotels__map {
+                width: 100%;
+            }
+        }
+
+        &__map {
+            display: inline-block;
+            width: 47%;
+        }
+
+        &__view {
+            display: none;
+            left: toRem(10);
+            top: toRem(10);
+            border-radius: toRem(2);
+            padding: toRem(15);
+        }
+
+        &__hotels {
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        &__content-container {
+            display: inline-block;
+            padding-top: toRem(60);
+            width: calc(100% - 26.6666667rem);
+        }
+    }
+
+    @media (min-width: 1440px) {
+        &__map {
+            width: calc(100% - 38.5rem);
+        }
+    }
+}
+
+.filter  {
+    display: inline-block;
+    width: 276px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-left: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    transform: translate(100%,0);
+    //overflow-y: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &__wrapper {
+        box-sizing: border-box;
+        background-color: #fff;
+        padding: 60px 15px 55px 27px;
+        box-shadow: inset -10px 0px 30px rgba(0, 0, 0, 0.05);
+        color: $black;
+        height: 100%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    &__graphic {
+        span {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 5px;
+            height: 50px;
+            background-color: #FDD66B;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            opacity: 1;
+
+            &.disabled {
+                opacity: .5;
+            }
+        }
+    }
+
+    &.active {
+        transform: translate(0,0);
+    }
+
+    &__button {
+        &--close {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            z-index: 2;
+
+            &:before {
+                width: 18px;
+                background-color: #fff;
+            }
+
+            span {
+                width: 18px;
+                background-color: #fff;
+            }
+        }
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-family: bold;
+        font-size: 12px;
+        margin-bottom: 10px;
+        color: $grey;
+        text-transform: uppercase;
+
+        &:first-child {
+            margin-top: 28px;
+        }
+    }
+
+    &__price {
+        margin-bottom: 24px;
+        font-size: 14px;
+        width: 196px;
+
+        p {
+            display: inline-block;
+            position: relative;
+            padding-right: 10px;
+
+            &:before {
+                font-size: 10px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(0,-50%);
+            }
+
+            &:nth-of-type(2) {
+                margin: 0 5px;
+                padding: 0;
+            }
+        }
+    }
+
+    &__distance {
+        margin-bottom: 27px;
+        width: 196px;
+    }
+
+    &__range {
+        display: block;
+        width: 100%;
+        border: 3px solid #FFFAEA;
+        box-sizing: border-box;
+        border-radius: 2px;
+        color: $black;
+        line-height: 32px;
+        font-size: 14px;
+        padding-left: 27px;
+        position: relative;
+
+        &:before {
+            content: '\e963';
+            font-family: icon;
+            color: $black;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translate(0,-50%);
+        }
+
+        p {
+            display: inline-block;
+            margin-left: 5px;
+        }
+    }
+
+    &__input {
+        &--distance-range {
+            margin-top: -3px;
+        }
+
+        &--price-range {
+            margin-bottom: 13px;
+        }
+    }
+
+    &__score {
+        margin-bottom: 20px;
+    }
+
+    &__benefits {
+        margin-bottom: 20px;
+    }
+
+    &__cities {
+        margin-bottom: 20px;
+    }
+
+    &__for-invalid {
+        padding-bottom: 55px;
+    }
+
+    @media (min-width: 768px) {
+        width: 246px;
+        position: static;
+        vertical-align: top;
+        padding-left: 0;
+        padding-right: 16px;
+        box-shadow: inset -10px 0px 30px rgba(0, 0, 0, 0.05);
+        transform: translate(0,0);
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        &__wrapper {
+            padding: 60px 0 0 27px;
+            box-sizing: border-box;
+            box-shadow: none;
+            color: $black;
+            background-color: transparent;
+            overflow: visible;
+            //overflow-y: scroll;
+            //-webkit-overflow-scrolling: touch;
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        width: toRem(320);
+        padding-right: toRem(16);
+        overflow-y: scroll;
+        box-shadow: inset -(toRem(10)) 0px toRem(30) rgba(0, 0, 0, 0.05);
+
+        &__wrapper {
+            padding: toRem(60) 0 0 toRem(27);
+            box-sizing: border-box;
+            box-shadow: none;
+            color: $black;
+            background-color: transparent;
+            overflow: visible;
+            //overflow-y: scroll;
+            //-webkit-overflow-scrolling: touch;
+        }
+
+        section {
+            margin-bottom: toRem(20);
+        }
+
+        &__title {
+            margin-top: toRem(28);
+            font-size: toRem(12);
+            margin-bottom: toRem(10);
+        }
+
+        &__price {
+            margin-bottom: toRem(24);
+            font-size: toRem(14);
+            width: toRem(196);
+
+            p {
+                padding-right: toRem(10);
+
+                &:before {
+                    font-size: toRem(10);
+                }
+
+                &:nth-of-type(2) {
+                    margin: 0 toRem(5);
+                }
+            }
+        }
+
+        &__score {
+            margin-bottom:toRem(20);
+        }
+
+        &__distance {
+            margin-bottom: toRem(27);
+            width: toRem(196);
+        }
+
+        &__range {
+            border: toRem(3) solid #FFFAEA;
+            border-radius: toRem(2);
+            line-height: toRem(32);
+            font-size: toRem(14);
+            padding-left: toRem(27);
+
+            &:before {
+                font-size: toRem(10);
+                left: toRem(10);
+            }
+
+            p {
+                margin-left: toRem(5);
+            }
+        }
+
+        &__input {
+            &--distance-range {
+                margin-top: -(toRem(3));
+            }
+
+            &--price-range {
+                margin-bottom: toRem(13);
+            }
+        }
+
+        &__for-invalid {
+            padding-bottom: toRem(55);
+        }
+    }
+}
+
+.hotels-cards {
+    color: $black;
+    display: inline-block;
+    width: 100%;
+    //height: 100%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+
+    &:before {
+        content: '';
+        opacity: 0;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+    }
+
+    &.darken {
+        &:before {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &__wrapper {
+        box-sizing: border-box;
+        padding: 28px 6.25% 28px 6.25%;
+    }
+
+    &__head {
+        position: relative;
+
+        &--blank {
+            display: block;
+            width: 50%;
+            height: 16px;
+            background: #E7E7E7;
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__settings {
+        &--blank {
+            display: block;
+            width: 30%;
+            height: 16px;
+            background: #E7E7E7;
+            border-radius: 2px;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        font-family: bold;
+        line-height: 16px;
+        font-size: 24px;
+        margin-bottom: 16px;
+
+        span {
+            margin-top: 5px;
+            display: block;
+            font-family: reg;
+            font-size: 16px;
+            color: $grey;
+        }
+    }
+
+    &__button {
+        &--filter {
+            display: block;
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &:before {
+                content: '';
+                font-family: icon;
+                color: $white;
+            }
+        }
+    }
+
+    &__list {
+        margin-right: -10px;
+    }
+
+    &__item {
+        width: 280px;
+        box-sizing: border-box;
+        display: inline-block;
+        margin-right: 10px;
+
+        & + .hotels-cards__item {
+            margin-top: 25px;
+        }
+    }
+
+    &__sort {
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        button {
+            font-size: 16px;
+        }
+    }
+
+    &__view {
+        display: none;
+    }
+
+    &__preloader {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        box-sizing: border-box;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        &__wrapper {
+            padding:25px span(0.5 of 9.5) 25px span(0.5 of 9.5);
+            box-shadow: -10px 0px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            height: 100%;
+        }
+
+        &__title {
+            display: inline-block;
+            font-family: bold;
+            line-height: normal;
+            font-size: 24px;
+            margin-bottom: 20px;
+
+            span {
+                margin-top: 0;
+                margin-left: 7px;
+                display: inline-block;
+                font-family: bold;
+                font-size: 24px;
+                color: $black;
+            }
+        }
+
+        &__button {
+            &--filter {
+                display: none;
+            }
+        }
+
+        &__list {
+            position: relative;
+            margin-right: 0;
+        }
+
+        &__settings {
+            font-size: 0;
+            margin-bottom: 15px;
+        }
+
+        &__view {
+            display: inline-block;
+            width: 20%;
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        &__item {
+            width:auto;
+            margin-right: 0;
+        }
+
+        &__sort {
+            display: inline-block;
+            width: 80%;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 16px;
+            margin-bottom: 0;
+
+            button {
+                font-size: 16px;
+            }
+        }
+
+        &__preloader {
+            //position: absolute;
+            //width: 100%;
+            //height: 100%;
+            //top: 0;
+            //left: 0;
+            //z-index: 1;
+            //background-color: #fff;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        width: 53%;
+        vertical-align: top;
+        //max-width: 38.499375rem;
+
+        &__wrapper {
+            height: 100%;
+            padding: toRem(25) toRem(20) toRem(25) toRem(32);
+            box-shadow: -(toRem(10)) 0px toRem(30) rgba(0, 0, 0, 0.05);
+            max-width: toRem(462);
+            box-sizing: border-box;
+        }
+
+        &__title {
+            font-size: toRem(24);
+            line-height: toRem(16);
+            margin-bottom: toRem(20);
+
+            span {
+                margin-left: toRem(7);
+                font-size: toRem(24);
+            }
+        }
+
+        &__settings {
+            margin-bottom: toRem(15);
+        }
+
+        &__item {
+            width:auto;
+            max-width: 497px;
+
+            & + .hotels-cards__item {
+                margin-top: toRem(25);
+            }
+        }
+
+        &__sort {
+            font-size: toRem(16);
+
+            button {
+                font-size: toRem(16);
+            }
+        }
+    }
+
+    @media (min-width: 1440px) {
+        width: auto;
+    }
+}

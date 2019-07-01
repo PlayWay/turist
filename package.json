@@ -1,0 +1,62 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "natives": "^1.1.6",
+    "node-modules": "^1.0.1",
+    "sass": "^1.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.12",
+    "browserify": "^16.2.3",
+    "compression": "^1.7.1",
+    "del": "^3.0.0",
+    "event-stream": "^4.0.1",
+    "glob": "^7.1.2",
+    "google-maps": "^3.2.1",
+    "gsvpano": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "include-media": "^1.4.9",
+    "jquery": "^3.2.1",
+    "jquery-bridget": "^2.0.1",
+    "magnific-popup": "^1.1.0",
+    "masonry-layout": "^4.1.1",
+    "material-design-iconic-font": "^2.2.0",
+    "node-sass": "^4.9.0",
+    "normalizecss": "^3.0.0",
+    "nouislider": "^13.1.1",
+    "reset": "^0.1.0",
+    "resetcss": "^1.0.3",
+    "slick-carousel": "^1.6.0",
+    "susy": "^3.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^2.0.0",
+    "wnumb": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@92.63.100.154:/var/www/www-root/data/git/greenline.git"
+  },
+  "description": ""
+}

@@ -1,0 +1,560 @@
+- var feedbacks = [{img:"/img/feedback.jpg", score: "5", title: "Анатолий", date: "6 декабря 2017", userText: "Гостиница просто отличн"},{img:"/img/feedback.jpg", score: "5", title: "Анатолий", date: "6 декабря 2017", userText: "Гостиница просто отличная. Удобно расположена таким образом, что можно без труда пройти до центра города пешком. Поблизости не наблюдается излишнего скопления народа. Персонал внимателен к просьбам, не грубит. На счет питания тоже все нормально. Завтрак достойный. В целом все супер!", answerB:"Представитель отеля", answerSpan:"6 декабря 2017", answerP:"Спасибо за отзыв. Будем стараться и дальше улучшать нашу гостиницу"},{img:"/img/feedback.jpg", score: "5", title: "Анатолий", date: "6 декабря 2017", userText: "Гостиница просто отличная. Удобно расположена таким образом, что можно без труда пройти до центра города пешком. Поблизости не наблюдается излишнеавтрак достойный. В целом все супер!"},{img:"/img/feedback.jpg", score: "5", title: "Анатолий", date: "6 декабря 2017", userText: "Гостиница просто отличная. Удобно расположена таким образом, что можно без труда пройти до центра города пешком. Поблизости не наблюдается излишнего скопления народа. Персонал внимателен к просьбам, не грубит. На счет питания тоже все нормально. Завтрак достойный. В целом все супер!"},{img:"/img/feedback.jpg", score: "5", title: "Анатолий", date: "6 декабря 2017", userText: "Гостиница просто отличная. Удобно расположена таким образом, что можно без труда пройти до центра города пешком. Поблизости не наблюдается излишнего скопления народа. Персонал внимателен к просьбам, не грубит. На счет питания тоже все нормально. Завтрак достойный. В целом все супер!"},{img:"/img/feedback.jpg", score: "5", title: "Анатолий", date: "6 декабря 2017", userText: "Гостиница просто отличная. Удобно расположена таким образом, чтоавтрак достойный. В целом все супер!"}]
+
+
++b.hotel--page#hotel--page
+    +e.images
+        +e.photos-preview
+            +e.photos--left
+                +e.A.image(href="#")
+                    img(src="/img/index/hotel-page.jpg")
+                +e.A.image(href="#")
+                    img(src="/img/index/hotel-page.jpg")
+            +e.photos--right
+                +e.A.image(href="#")
+                    img(src="/img/index/hotel-page.jpg")
+                +e.A.image(href="#")
+                    img(src="/img/index/hotel-page.jpg")
+            +e.location-info--mobile.--desktop
+                h3 Как добраться?
+                +e.A.link--map.to-anchor-tablet(href="#location") На карте
+                +e.A.link--panorama.to-anchor-tablet(href="#location") Панорама
+                a.to-anchor(href="#about-hotel") Описание
+        +e.slider.swiper-container
+            .swiper-wrapper
+                +e.A.slide.swiper-slide(href="/img/index/hotel-page.jpg")
+                    img(class="swiper-lazy" src="/img/index/hotel-page.jpg")
+                +e.A.slide.swiper-slide(href="/img/index/hotel-page.jpg")
+                    img(class="swiper-lazy" src="/img/index/hotel-page.jpg")
+                +e.A.slide.swiper-slide(href="/img/index/hotel-page.jpg")
+                    img(class="swiper-lazy" src="/img/index/hotel-page.jpg")
+                +e.A.slide.swiper-slide(href="/img/index/hotel-page.jpg")
+                    img(class="swiper-lazy" src="/img/index/hotel-page.jpg")
+                +e.A.slide.swiper-slide(href="/img/index/hotel-page.jpg")
+                    img(class="swiper-lazy" src="/img/index/hotel-page.jpg")
+            +e.dots
+    +e.navigation.navigation__
+        +e.wrapper
+            +e.A.item.to-anchor(href="#main") Учебно-методический центр «Эльбрус-социум»
+            +e.A.item.to-anchor(href="#rooms") Номера
+            +e.A.item.to-anchor(href="#about-hotel") Об отеле
+            +e.A.item.to-anchor(href="#location") Расположение
+            +e.A.item.to-anchor(href="#feedbacks") Отзывы
+            +e.line
+    +e.container--page.container
+        +e.wrapper
+            +e.left
+                +e.SECTION.main#main
+                    +e.stars--page.stars--five
+                    +e.H1.title--page Учебно-методический центр «Эльбрус-социум»
+                    +e.ADDRESS.address--page
+                        +e.A.link--map.link--underline-blue.to-anchor-tablet(href="#location")
+                            span Великий Новгород, ул. Большая Московская, д. 10
+                    +e.small-info
+                        +e.price--page
+                            span 6500
+                            p за ночь
+                        +e.time
+                            +e.half
+                                span 14:00
+                                p заезд
+                            +e.half
+                                span 12:00
+                                p выезд
+                        +e.score--page.--green.score__
+                            +e.assessment 5 — отлично
+                            +e.A.link.link--underline-blue.to-anchor(href="#feedbacks") 55 отзывов
+                    +e.services
+                        +e.H2.title.text--hotel-section-title Услуги отеля:
+                        +e.icons
+                            +e.I.icon.icon--teapot
+                            +e.I.icon.icon--bowling
+                            +e.I.icon.icon--business-center
+                            +e.I.icon.icon--buffet
+                            +e.I.icon.icon--fridge
+                            +e.I.icon.icon--tennis
+                            +e.I.icon.icon--iron
+                            +e.I.icon.icon--canteen
+                            +e.I.icon.icon--gym
+                            +e.I.icon.icon--bar
+                            +e.I.icon.icon--bath
+                            +e.I.icon.icon--children-field
+                            +e.I.icon.icon--disabled
+                            +e.I.icon.icon--club
+                            +e.I.icon.icon--waterpool
+                            +e.I.icon.icon--air-condition
+                            +e.I.icon.icon--cinema
+                            +e.I.icon.icon--sanatorium
+                        +e.BUTTON.button--more-services.button--underline-blue все удобства
+                +e.SECTION.booking.booking__
+                    +e.H2.title.text--hotel-section-title Бронирование
+                    +e.text.text--page
+                        p Введите дату пребывания и выберите интересующий вас номер
+                    +e.dates
+                        +e.input.input.--half.--grey.--date
+                            input(placeholder="заезд" data-toggle="datepicker")
+                        +e.input.input.--half.--grey.--date
+                            input(placeholder="выезд" data-toggle="datepicker")
+                +e.SECTION.rooms.rooms__#rooms
+                    +e.H2.title.text--hotel-section-title Номера
+                    +e.list
+                        +e.item.room__
+                            +e.wrapper
+                                +e.slider.swiper-container
+                                    .swiper-wrapper
+                                        +e.A.slide.swiper-slide(href="/img/hotel-page/room.jpg")
+                                            +e.IMG.image.swiper-lazy(src="/img/hotel-page/room.jpg")
+                                        +e.A.slide.swiper-slide(href="/img/hotel-page/location-info.svg")
+                                            +e.IMG.image.swiper-lazy(src="/img/hotel-page/room.jpg")
+                                        +e.A.slide.swiper-slide(href="/img/index/main.jpg")
+                                            +e.IMG.image.swiper-lazy(src="/img/index/main.jpg")
+                                        +e.A.slide.swiper-slide(href="/img/hotel-page/room.jpg")
+                                            +e.IMG.image.swiper-lazy(src="/img/hotel-page/room.jpg")
+                                    +e.dots
+                                +e.description
+                                    +e.top
+                                        +e.title Одноместный номер
+                                        +e.price
+                                            span цена
+                                            +e.digit от 20000
+                                            span  за ночь
+                                    +e.dropdown
+                                        +e.BUTTON.toggle.button--toggle(type="button") Описание
+                                        +e.text.text--page
+                                            p Средняя площадь номера – около 14 кв. м. Количество кроватей: Одна двуспальная кровать или две односпальные кровати. Размер кровати: 180*200 или 90*200. Этаж: 2. Максимальное число гостей в номере: 2. Вид: внутренний двор.
+                                            +e.BUTTON.button--more.button--underline-blue(type="button") Посмотреть полностью
+                                    +e.dropdown--prices
+                                        +e.BUTTON.toggle.button--toggle(type="button") Цены
+                                        +e.table--mobile.swiper-container
+                                            .swiper-wrapper
+                                                +e.item.swiper-slide
+                                                    +e.date 15 – 29 января
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер, завтрак
+                                                    +e.line
+                                                        span 3000
+                                                        p ребенок (4-12 лет) на доп. месте
+                                                +e.item.swiper-slide
+                                                    +e.date 15 – 29 января
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер, завтрак
+                                                    +e.line
+                                                        span 3000
+                                                        p ребенок (4-12 лет) на доп. месте
+                                                +e.item.swiper-slide
+                                                    +e.date 15 – 29 января
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер, завтрак
+                                                    +e.line
+                                                        span 3000
+                                                        p за ребенок (4-12 лет) на доп. месте
+                                                +e.item.swiper-slide
+                                                    +e.date 15 – 29 января
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер, завтрак
+                                                    +e.line
+                                                        span 3000
+                                                        p за ребенок (4-12 лет) на доп. месте
+                                    +e.BUTTON.button--variants.button.--underline-blue(type="button") Варианты размещения
+                                    +e.BUTTON.button--choose.button--blue(type="button") Выбрать
+                                    +e.BUTTON.button--reserved.--mobile.button--blue(type="button") Забронировать
+                                    +e.options
+                                        +e.table
+                                            table
+                                                thead
+                                                    tr
+                                                        th
+                                                            p Варианты размещения
+                                                        th
+                                                            p 01 Дек
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Янв
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Фев
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Март
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Янв
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Фев
+                                                            p 29 Дек
+                                                tr
+                                                    td
+                                                        p + завтрак, обед, 2-х раз. питание
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                tr
+                                                    td
+                                                        p + завтрак, обед, ужин
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                tr
+                                                    td
+                                                        p + завтрак, обед, 2-х раз. питание
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                tr
+                                                    td
+                                                        p + завтрак, обед, ужин
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                        +e.BUTTON.button--close-table.button--underline-blue(type="button") свернуть
+                        +e.item.room__
+                            +e.wrapper
+                                +e.slider.swiper-container
+                                    .swiper-wrapper
+                                        +e.A.slide.swiper-slide(href="/img/hotel-page/room.jpg")
+                                            +e.IMG.image.swiper-lazy(src="/img/hotel-page/room.jpg")
+                                        +e.A.slide.swiper-slide(href="/img/hotel-page/location-info.svg")
+                                            +e.IMG.image.swiper-lazy(src="/img/hotel-page/room.jpg")
+                                        +e.A.slide.swiper-slide(href="/img/index/main.jpg")
+                                            +e.IMG.image.swiper-lazy(src="/img/index/main.jpg")
+                                        +e.A.slide.swiper-slide(href="/img/hotel-page/room.jpg")
+                                            +e.IMG.image.swiper-lazy(src="/img/hotel-page/room.jpg")
+                                    +e.dots
+                                +e.description
+                                    +e.top
+                                        +e.title Одноместный номер
+                                        +e.price
+                                            span цена
+                                            +e.digit от 20000
+                                            span  за ночь
+                                    +e.dropdown
+                                        +e.BUTTON.toggle.button--toggle(type="button") Описание
+                                        +e.text.text--page
+                                            p Средняя площадь номера – около 14 кв. м. Количество кроватей: Одна двуспальная кровать или две односпальные кровати. Размер кровати: 180*200 или 90*200. Этаж: 2. Максимальное число гостей в номере: 2. Вид: внутренний двор.
+                                            +e.BUTTON.button--more.button--underline-blue(type="button") Посмотреть полностью
+                                    +e.dropdown--prices
+                                        +e.BUTTON.toggle.button--toggle(type="button") Цены
+                                        +e.table--mobile.swiper-container
+                                            .swiper-wrapper
+                                                +e.item.swiper-slide
+                                                    +e.date 15 – 29 января
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер, завтрак
+                                                    +e.line
+                                                        span 3000
+                                                        p ребенок (4-12 лет) на доп. месте
+                                                +e.item.swiper-slide
+                                                    +e.date 15 – 29 января
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер, завтрак
+                                                    +e.line
+                                                        span 3000
+                                                        p ребенок (4-12 лет) на доп. месте
+                                                +e.item.swiper-slide
+                                                    +e.date 15 – 29 января
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер, завтрак
+                                                    +e.line
+                                                        span 3000
+                                                        p за ребенок (4-12 лет) на доп. месте
+                                                +e.item.swiper-slide
+                                                    +e.date 15 – 29 января
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер
+                                                    +e.line
+                                                        span 3000
+                                                        p за номер, завтрак
+                                                    +e.line
+                                                        span 3000
+                                                        p за ребенок (4-12 лет) на доп. месте
+                                    +e.BUTTON.button--variants.button.--underline-blue(type="button") Варианты размещения
+                                    +e.BUTTON.button--choose.button--blue(type="button") Выбрать
+                                    +e.BUTTON.button--reserved.--mobile.button--blue(type="button") Забронировать
+                                    +e.options
+                                        +e.table
+                                            table
+                                                thead
+                                                    tr
+                                                        th
+                                                            p Варианты размещения
+                                                        th
+                                                            p 01 Дек
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Янв
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Фев
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Март
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Янв
+                                                            p 29 Дек
+                                                        th
+                                                            p 01 Фев
+                                                            p 29 Дек
+                                                tr
+                                                    td
+                                                        p + завтрак, обед, 2-х раз. питание
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                tr
+                                                    td
+                                                        p + завтрак, обед, ужин
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                tr
+                                                    td
+                                                        p + завтрак, обед, 2-х раз. питание
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                tr
+                                                    td
+                                                        p + завтрак, обед, ужин
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                                    td
+                                                        p 4500
+                                        +e.BUTTON.button--close-table.button--underline-blue(type="button") свернуть
+                +e.SECTION.about-hotel.about-hotel__#about-hotel
+                    +e.H2.title.text--hotel-section-title Об отеле
+                    +e.text.text--page
+                        p Гостиница «Булгар» находится в Вахитовском районе, недалеко от центра города Казань. Вблизи от отеля расположены Кукольный театр Экият, Музей изобразительных искусств, комплекс Туган Авылым и другие достопримечательности. Современное здание поразит своими роскошными интерьерами и высоким уровнем сервиса.Туган Авылым и другие достопримечательности. Современное здание поразит своими роскошными интерьерами и высоким уровнем сервиса.
+                    +e.BUTTON.button--more.button.--underline-blue(type="button") Подробнее об отеле
+                    +e.info
+                        +e.item
+                            span Питание
+                            p В гостинице работает ресторан, который включает три малых банкетных зала и большой банкетный зал. По утрам сервируется ежедневный завтрак, на обед и ужин можно заказать блюда русской и европейской кухни.
+                        +e.item
+                            span Номерной фонд
+                            p Номерной фонд состоит из 35 номеров: 15 номеров, выполненных в классическом стиле, и 20 номеров в сосновом срубе.
+                        +e.item
+                            span Животные
+                            p Размещение домашних животных не допускается
+                        +e.item--time
+                            span Расчетный часы
+                            p
+                                b заезд
+                                b с 14:00
+                            p
+                                b выезд
+                                b в 12:00
+            +e.promo.promo__.sl--scrollable#form-booking
+                +e.wrapper.sl--scrollable
+                    +e.location-info
+                        h3 Как добраться?
+                        a.to-anchor(href="#map") На карте
+                        a.to-anchor(href="#map") Панорама
+                        a.to-anchor(href="#about") Описание
+                    +e.booking.form-booking__
+                        +e.BUTTON.button--close.button--close(type="button")
+                            span
+                        +e.phone
+                            span Для быстрого бронирования позвоните в отель
+                            a(href="tel:7675678") +7 (844) 245–95–04
+                        +e.options
+                            +e.stage-1
+                                +e.text Либо введите дату пребывания и выберите нужный номер
+                                +e.datepicker
+                                    h4 Дата пребывания
+                                    +e.input--date.input--half.--grey.--date
+                                        input(placeholder="заезд" data-toggle="datepicker")
+                                    +e.input--date.input--half.--grey.--date
+                                        input(placeholder="выезд" data-toggle="datepicker")
+                                +e.list
+                                    h4 Выбранные номера
+                                    +e.line
+                                        +e.room
+                                            p Одноместный номер
+                                            span + завтрак, обед, 2-х раз. питание
+                                        +e.counter
+                                            +e.BUTTON(type="button").button--count.--decrement.button -
+                                            +e.count 1
+                                            +e.BUTTON(type="button").button--count.--increment.button +
+                                        +e.price 10000
+                                    +e.line
+                                        +e.room
+                                            p Двухместный номер
+                                            span + завтрак, обед
+                                        +e.counter
+                                            +e.BUTTON(type="button").button--count.--decrement.button -
+                                            +e.count 1
+                                            +e.BUTTON(type="button").button--count.--increment.button +
+                                        +e.price 10000
+                            +e.stage-2
+                                +e.FORM.form.form__.--booking
+                                    +e.body
+                                        +e.line
+                                            label(for="name") ФИО
+                                            +e.input.input.--yellow
+                                                input(placeholder="Ваше имя" id="name")
+                                        +e.line
+                                            label(for="email") Email
+                                            +e.input.input.--yellow
+                                                input(placeholder="Ваш email" id="email")
+                                        +e.line
+                                            label(for="phone") Телефон
+                                            +e.input.input.--yellow
+                                                input(type="tel" placeholder="Ваш номер телефона" id="phone")
+                            +e.total
+                                p Итого
+                                +e.total-price 30000
+                                +e.BUTTON.button--reserved.button--blue(type="button") Забронировать
+                                +e.annotation Пока вы ни за что не платите
+                        +e.preloader.preloader
+                            span
+                            span
+                            span
+                        +e.response.response__.--booking
+                            +e.wrapper--booking
+                                div
+                                span Бронирование оформлено
+                                p Представитель гостиницы свяжется вами в ближайшее время
+            +e.SECTION.location.location__#location
+                +e.H2.title.text--hotel-section-title Расположение
+                +e.block
+                    +e.BUTTON.button--back.button(type="button")
+                    +e.view
+                        +e#map.map
+                        +e#panorama.panorama
+                    +e.description
+                        +e.BUTTON.button--toggle.button(type="button")
+                            span Как добраться
+                        +e.text.text--page Проезд от ж/д вокзала до гостиницы: на городском автобусе № 30 доехать до ост. «Ул. Вишневского» или «Чеховский рынок»; на автобусе № 10 или троллейбусе № 7 доехать до ост. «Парк Горького».
+                    +e.view-buttons
+                        +e.BUTTON.button--map.button(type="button") на карте
+                        +e.BUTTON.button--panorama.button(type="button") в панорама
+            +e.SECTION.feedbacks.feedbacks__#feedbacks
+                +e.H2.title.text--hotel-section-title 5 отзывов
+                +e.wrapper
+
+                    each feedback in feedbacks
+                        +e.item.feedback__
+                            +e.avatar
+                                img(src="/img/feedback.jpg")
+                            +e.title-container
+                                +e.H5.title= feedback.title
+                                +e.date= feedback.date
+                            +e.score.score__.--feedback
+                                    +e.number.--green
+                                        span= feedback.score
+                            +e.P.user-text= feedback.userText
+                            +e.answer
+                                b= feedback.answerB
+                                span= feedback.answerSpan
+                                p= feedback.answerP
+                    +e.item--comment
+                        h5 Оставьте свое впечатление
+                        +e.FORM.form.form__.--feedback
+                            +e.body
+                                +e.value
+                                    p Оцените отель:
+                                    +e.score.score-field__
+                                        +e.LABEL.radio(for="radio-1")
+                                            input(type="radio" name="score" value="1 звезда" id="radio-1")
+                                            span 1 звезда
+                                        +e.LABEL.radio(for="radio-2")
+                                            input(type="radio" name="score" value="2" id="radio-2")
+                                            span 2
+                                        +e.LABEL.radio(for="radio-3")
+                                            input(type="radio" name="score" value="3" id="radio-3")
+                                            span 3
+                                        +e.LABEL.radio(for="radio-4")
+                                            input(type="radio" name="score" value="4" id="radio-4")
+                                            span 4
+                                        +e.LABEL.radio(for="radio-5")
+                                            input(type="radio" name="score" value="5" id="radio-5")
+                                            span 5
+                                +e.textarea
+                                    textarea(placeholder="Напишите ваш отзыв")
+                                    +e.BUTTON.button--submit-feedback.button(type="button")
+                            +e.preloader
+                            +e.response
+    +e.marketing.marketing__
+        +e.BUTTON.button--reserved.--mobile.--line.button#button-resrved(type="button") Позвонить в отель для бронирования
+        span Номер отеля
+        +e.A.link(href="tel:78442459504") +7 (844) 245–95–04
+        +e.BUTTON.button--reserved.--tablet.button--blue Забронировать
+    div#gallery
+
+
+
+
+
+
+
+
+

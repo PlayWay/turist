@@ -1,0 +1,28 @@
++b.popup--forgot.sl--scrollable
+    +e.body
+        +e.form.form__.--forgot
+            +e.body.--popup
+                +e.title--forgot Восстановление пароля
+                +e.P.text Введите почту, на которую придет ссылка на восстановление
+                +e.line
+                    +e.input.input.--form-popup.--black
+                        input(placeholder="example@gmail.com" id="forgot-email")
+                +e.button-wrapper--forgot
+                    +e.BUTTON.button--recover.button--blue Восстановить
+            +e.BUTTON.button--close.button--close(type="button")
+                span
+            +e.preloader.preloader
+                +e.spinner.spinner__
+                    +e.line
+                        +e.cog
+                            +e.cog-inner--left
+                        +e.ticker
+                            +e.cog-inner--center
+                        +e.cog
+                            +e.coh-inner--right
+            +e.response.response__
+                +e.wrapper--booking
+                    div
+                    span Письмо с новым паролем отправлено на почту
+    +e.close
+

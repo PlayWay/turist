@@ -1,0 +1,339 @@
+.search__results {
+    transition: .3s ease;
+}
+
+.header {
+
+    &:before {
+        transition: .3s ease;
+        transition-property: opacity;
+    }
+
+    &__menu {
+        transition: .5s cubic-bezier(1, 0, 0, 1);
+        transition-property: transform;
+    }
+
+    &__button {
+        &--hamburger {
+            transition: .5s cubic-bezier(1, 0, 0, 1);
+            transition-property: left;
+
+            span {
+                transition: .5s cubic-bezier(1, 0, 0, 1);
+                transition-property: transform;
+            }
+        }
+    }
+}
+
+.main {
+
+    &:after {
+        transition: .3s ease;
+        transition-property: opacity;
+    }
+}
+
+.popup {
+    transition: .3s ease;
+    transition-property: opacity;
+
+    &__form {
+        transition: .3s ease;
+        transition-property: opacity;
+
+        &--forgot {
+            transition-delay: .2s;
+        }
+
+        &--registration {
+            transition-delay: .2s;
+        }
+    }
+
+
+}
+
+.nav {
+    &__item {
+        transition: .3s ease;
+        transition-property: max-height;
+    }
+}
+
+.hotel {
+    &__icons {
+        transition: .3s ease;
+        transition-property: max-height;
+    }
+
+    &__icon {
+        transition: .3s ease;
+        transition-property: opacity,transform;
+    }
+}
+
+.search {
+    &--blue {
+        transition: .3s ease;
+        transition-property: transform;
+    }
+
+    &__results {
+        transition: .3s ease;
+        transition-property: max-height;
+    }
+}
+
+.form {
+    &__line {
+        label {
+            transition: .2s ease;
+            transition-property: color;
+        }
+
+        input {
+            transition: .2s ease;
+            transition-property: color;
+        }
+    }
+}
+
+.filter {
+    transition: .5s cubic-bezier(1, 0, 0, 1);
+    transition-property: transform;
+}
+
+.all-hotels {
+    &__hotels {
+        &:before {
+            transition: .3s ease;
+            transition-property: opacity;
+        }
+    }
+}
+
+.room {
+    &__toggle {
+        transition: .3s ease;
+        transition-property: color;
+
+        &:before {
+            transition: .3s ease;
+            transition-property: transform;
+            transform-origin: top;
+        }
+    }
+
+    &__text {
+        transition: .3s ease;
+        transition-property: max-height;
+    }
+
+    &__table {
+        transition: .3s ease;
+        transition-property: max-height,padding-bottom;
+    }
+}
+
+.promo {
+    transition: .3s ease;
+    transition-property: opacity;
+}
+
+.location {
+    &__description {
+        transition: .5s ease;
+        transition-property: transform,padding;
+    }
+
+    &__text {
+        transition: .5s ease;
+        transition-property: transform;
+    }
+
+    &__button {
+        &--toggle {
+            span {
+                &:before {
+                    transition: .5s ease;
+                    transition-property: transform;
+                }
+            }
+        }
+    }
+}
+
+.button {
+    &--eye {
+        &:before {
+            transition: .3s ease;
+            transition-property: color;
+        }
+    }
+}
+
+.select {
+    transition: .5s ease;
+    transition-property: box-shadow;
+
+    &__value {
+        span {
+            &:after {
+                transition: .5s ease;
+                transition-property: transform;
+                transform-origin: center;
+            }
+        }
+    }
+
+    &__list {
+        transition: .5s ease;
+        transition-property: max-height, padding-bottom;
+    }
+}
+
+.checkbox {
+    transition: .3s ease;
+}
+
+.score-field {
+    &__radio {
+        span {
+            transition: .3s ease;
+        }
+    }
+}
+
+.response {
+    transition: .3s ease;
+    transition-property: opacity,background-color;
+}
+
+@media (min-width: 768px) {
+    .room {
+        &__options {
+            transition: .3s ease;
+            transition-property: opacity;
+        }
+    }
+
+    //.hotel {
+    //    &__icons {
+    //        transition: .3s ease;
+    //        transition-property: max-height,max-width;
+    //        transition-delay: .2s;
+    //
+    //        &.active {
+    //            transition-delay: 0s;
+    //
+    //            .hotel__icon {
+    //                transition-duration: .5s;
+    //            }
+    //        }
+    //    }
+    //
+    //    &__icon {
+    //        transition: .15s ease;
+    //        transition-property: opacity,transform;
+    //    }
+    //}
+}
+
+@keyframes bounce {
+    50% {transform: translatey(-20px);}
+    100% {transform: translatey( 20px);}
+}
+
+@media (min-width: 1240px) {
+    .darken {
+        &:before {
+            transition: .3s ease;
+            transition-property: opacity;
+        }
+    }
+
+    .icon {
+        &:hover {
+            &:after {
+                transition: .2s ease;
+                transition-property: opacity;
+            }
+        }
+    }
+}
+
+
+@keyframes container-rotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes fill-unfill-rotate {
+    12.5% {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg)
+    }
+
+    25% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg)
+    }
+
+    37.5% {
+        -webkit-transform: rotate(405deg);
+        transform: rotate(405deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(540deg);
+        transform: rotate(540deg)
+    }
+
+    62.5% {
+        -webkit-transform: rotate(675deg);
+        transform: rotate(675deg)
+    }
+
+    75% {
+        -webkit-transform: rotate(810deg);
+        transform: rotate(810deg)
+    }
+
+    87.5% {
+        -webkit-transform: rotate(945deg);
+        transform: rotate(945deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1080deg);
+        transform: rotate(1080deg)
+    }
+}
+
+@keyframes left-spin {
+    0%,to {
+        -webkit-transform: rotate(130deg);
+        transform: rotate(130deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+}
+
+@keyframes right-spin {
+    0%,to {
+        -webkit-transform: rotate(-130deg);
+        transform: rotate(-130deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+}

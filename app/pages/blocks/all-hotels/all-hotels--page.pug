@@ -1,0 +1,220 @@
+- var hotels = [{photo: "/img/index/hotel-card.jpg",title: "Radisson Blu Resort & Ca",address: "г. Москва, 300м от центра",benefits: ["Wi-Fi","парковка","бассейн"],phone: "+7 (844) 245–95–04",number: "5",numberText: "Отлично (55)",price: "от 3400"},{photo: "/img/index/hotel-card.jpg",title: "Radisson Blu Resort & Ca",address: "г. Москва, 300м от центра",benefits: ["Wi-Fi","парковка","бассейн"],phone: "+7 (844) 245–95–04",number: "5",numberText: "Отлично (55)",price: "от 3400"},{photo: "/img/index/hotel-card.jpg",title: "Radisson Blu Resort & Ca",address: "г. Москва, 300м от центра",benefits: ["Wi-Fi","парковка","бассейн"],phone: "+7 (844) 245–95–04",number: "5",numberText: "Отлично (55)",price: "от 3400"},{photo: "/img/index/hotel-card.jpg",title: "Radisson Blu Resort & Ca",address: "г. Москва, 300м от центра",benefits: ["Wi-Fi","парковка","бассейн"],phone: "+7 (844) 245–95–04",number: "5",numberText: "Отлично (55)",price: "от 3400"}]
+
+
++b.all-hotels--one#all-hotels
+    +e.filters.filter__.custom-scroll
+        +e.BUTTON.button--close.button--close(type="button")
+            span
+        +e.wrapper.sl--scrollable
+            +e.title Цена за ночь
+            +e.price
+                +e.graphic
+                +e.input--price-range#price-input
+                p.icon--rouble#price-value-from
+                p -
+                p.icon--rouble#price-value-to
+            +e.score--stars.score-field__
+                +e.LABEL.radio(for="star-1")
+                    input(type="checkbox" name="star" value="1" id="star-1")
+                    span 1 звезда
+                +e.LABEL.radio(for="star-2")
+                    input(type="checkbox" name="star" value="2" id="star-2")
+                    span 2
+                +e.LABEL.radio(for="star-3")
+                    input(type="checkbox" name="star" value="3" id="star-3")
+                    span 3
+                +e.LABEL.radio(for="star-4")
+                    input(type="checkbox" name="star" value="4" id="star-4")
+                    span 4
+                +e.LABEL.radio(for="star-5")
+                    input(type="checkbox" name="star" value="5" id="star-5")
+                    span 5
+            +e.score--score-value.score-field__
+                +e.LABEL.radio(for="score-1")
+                    input(type="checkbox" name="score" value="1" id="score-1")
+                    span оценка 1
+                +e.LABEL.radio(for="score-2")
+                    input(type="checkbox" name="score" value="2" id="score-2")
+                    span 2
+                +e.LABEL.radio(for="score-3")
+                    input(type="checkbox" name="score" value="3" id="score-3")
+                    span 3
+                +e.LABEL.radio(for="score-4")
+                    input(type="checkbox" name="score" value="4" id="score-4")
+                    span 4
+                +e.LABEL.radio(for="score-5")
+                    input(type="checkbox" name="score" value="5" id="score-5")
+                    span 5
+            +e.distance
+                +e.range
+                    span.range-value 200м
+                    p до моря
+                +e.input--distance-range.input--range#distance-input
+                    //input(class="distance-input" type="range" id="distance-input")
+            +e.title удобства
+            +e.SECTION.benefits.checkbox-field__
+                +e.LABEL.checkbox--benefits.checkbox(for="benefit-1")
+                    input(type="checkbox" name="wi-fi" id="benefit-1")
+                    span Wi-Fi
+                +e.LABEL.checkbox--benefits.checkbox(for="benefit-2")
+                    input(type="checkbox" name="parking" id="benefit-2")
+                    span Парковка
+                +e.LABEL.checkbox--benefits.checkbox(for="benefit-3")
+                    label
+                    input(type="checkbox" name="parking" id="benefit-3")
+                    span Кафе
+                +e.LABEL.checkbox--benefits.checkbox(for="benefit-4")
+                    input(type="checkbox" name="restaurant" id="benefit-4")
+                    span Ресторан
+                +e.LABEL.checkbox--benefits.checkbox(for="benefit-5")
+                    input(type="checkbox" name="sauna" id="benefit-5")
+                    span Сауна
+                +e.LABEL.checkbox--benefits.checkbox(for="benefit-6")
+                    input(type="checkbox" name="eatery" id="benefit-6")
+                    span Столовая
+                +e.LABEL.checkbox--benefits.checkbox(for="benefit-7")
+                    input(type="checkbox" name="spa" id="benefit-7")
+                    span SPA-центр
+            +e.title Курорт
+            +e.SECTION.cities
+                +e.LABEL.checkbox--cities.checkbox(for="city-1")
+                    input(type="checkbox" name="Dombai" id="city-1")
+                    span Домбай
+                +e.LABEL.checkbox--cities.checkbox(for="city-2")
+                    input(type="checkbox" name="Azau" id="city-2")
+                    span Азау
+                +e.LABEL.checkbox--cities.checkbox(for="city-3")
+                    input(type="checkbox" name="Kchau" id="city-3")
+                    span Кчау
+                +e.LABEL.checkbox--cities.checkbox(for="city-4")
+                    input(type="checkbox" name="glade" id="city-4")
+                    span Красная поляна
+                +e.LABEL.checkbox--cities.checkbox(for="city-5")
+                    input(type="checkbox" name="lake" id="city-5")
+                    span Зеленое озеро
+                +e.LABEL.checkbox--cities.checkbox(for="city-6")
+                    input(type="checkbox" name="marge" id="city-6")
+                    span Синяя опушка
+            +e.title для инвалидов
+            +e.SECTION.for-invalid
+                +e.LABEL.checkbox--invalid.checkbox(for="invalid-1")
+                    input(type="checkbox" name="wheelchair" id="invalid-1")
+                    span в инвалидных креслах
+                +e.LABEL.checkbox--invalid.checkbox(for="invalid-2")
+                    input(type="checkbox" name="deaf" id="invalid-2")
+                    span глухонемых
+                +e.LABEL.checkbox--invalid.checkbox(for="invalid-3")
+                    input(type="checkbox" name="support" id="invalid-3")
+                    span опорного аппарата
+                +e.LABEL.checkbox--invalid.checkbox(for="invalid-4")
+                    input(type="checkbox" name="violation" id="invalid-4")
+                    span с нарушением развития
+    +e.content-container
+        +e.hotels.hotels-cards__.custom-scroll
+            +e.wrapper
+                +e.body
+                    +e.head
+                        +e.H1.title Владивосток
+                            span — 240 гостиниц
+                        +e.BUTTON.button--filter.button--blue(type="button")
+                    +e.settings
+                        +e.sort.sort__.--hotels
+                            +e.select.select__.--all-hotels
+                                +e.BUTTON.value--up.button(type="button")
+                                    span по популярности
+                                +e.list--all-hotels
+                                    +e.option
+                                        span популярности
+                                    +e.option--down
+                                        span рейтингу
+                                    +e.option--up
+                                        span рейтингу
+                                    +e.option--down
+                                        span цене
+                                    +e.option--up
+                                        span цене
+                        +e.view.view__
+                            +e.LABEL.radio--view-one(for="view-one")
+                                input(type="radio" name="view" id="view-one" value="view-one" checked="checked")
+                                span
+                            +e.LABEL.radio--view-two(for="view-two")
+                                input(type="radio" name="view" id="view-two" value="view-two")
+                                span
+                            +e.LABEL.radio--view-map(for="view-map")
+                                input(type="radio" name="view" id="view-map" value="view-map")
+                                span
+                    +e.list--real#cards-list
+                        //+e.item--half.hotel__.--card.--all-hotels
+                        //    +e.photo--card.--left.--all-hotels
+                        //        img(src="323")
+                        //    +e.content--card.--right.--all-hotels
+                        //        +e.stars.stars--five.--all-hotels
+                        //        +e.title--card.--all-hotels
+                        //            span title
+                        //        +e.ADDRESS.address--card.--all-hotels address
+                        //        +e.UL.benefits--card.--all-hotels
+                        //            +e.LI.benefit--card.--all-hotels
+                        //                span benefit
+                        //            +e.LI.benefit--card.--all-hotels
+                        //                span benefit
+                        //            +e.LI.benefit--card.--all-hotels
+                        //                span benefit
+                        //        +e.A.phone--card.--all-hotels(href="")
+                        //            span phone
+                        //        +e.info-container
+                        //            +e.score.--card.--all-hotels.score__.--all-hotels
+                        //                +e.number.--green
+                        //                    span score
+                        //                p scoreText
+                        //            +e.price--card.--all-hotels price
+                +e.preloader
+                    +e.head--blank
+                    +e.settings--blank
+                    +e.list--blank
+                        +e.item.hotel__.--blank
+                            +e.photo--card.--left.--blank
+                            +e.content--card.--right.--blank
+                                +e.title--blank
+                                +e.ADDRESS.address--blank
+                                +e.UL.benefits--blank
+                                +e.info-container
+                                    +e.score--blank
+                                    +e.price--card.--blank
+                        +e.item.hotel__.--blank
+                            +e.photo--card.--left.--blank
+                            +e.content--card.--right.--blank
+                                +e.title--blank
+                                +e.ADDRESS.address--blank
+                                +e.UL.benefits--blank
+                                +e.info-container
+                                    +e.score--blank
+                                    +e.price--card.--blank
+                        +e.item.hotel__.--blank
+                            +e.photo--card.--left.--blank
+                            +e.content--card.--right.--blank
+                                +e.title--blank
+                                +e.ADDRESS.address--blank
+                                +e.UL.benefits--blank
+                                +e.info-container
+                                    +e.score--blank
+                                    +e.price--card.--blank
+                        +e.item.hotel__.--blank
+                            +e.photo--card.--left.--blank
+                            +e.content--card.--right.--blank
+                                +e.title--blank
+                                +e.ADDRESS.address--blank
+                                +e.UL.benefits--blank
+                                +e.info-container
+                                    +e.score--blank
+                                    +e.price--card.--blank
+        +e.map#map-allHotels
+            +e.view.view__
+                +e.LABEL.radio--view-one(for="view-one")
+                    input(type="radio" name="view" id="view-one")
+                    span
+                +e.LABEL.radio--view-two(for="view-two")
+                    input(type="radio" name="view" id="view-two")
+                    span
+                +e.LABEL.radio--view-map.--black(for="view-map")
+                    input(type="radio" name="view" id="view-map")
+                    span

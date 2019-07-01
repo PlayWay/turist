@@ -1,0 +1,104 @@
+.add-hotel {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    color: $black;
+    background-color: #F8D78D;
+    position: relative;
+
+    h2 {
+        font-size: 21px;
+        font-family: bold;
+        margin-right: -1px;
+    }
+
+    p {
+        line-height: 30px;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    &__button {
+        width: 280px;
+        border: 1px solid $black;
+        box-sizing: border-box;
+        border-radius: 2px;
+        line-height: 58px;
+        font-size: 14px;
+
+        &:active {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    &__image {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 38px;
+        padding-bottom: 40px;
+
+        h2 {
+            font-size: 22px;
+            margin-right: 0;
+            margin-bottom: 7px;
+        }
+
+        p {
+            line-height: 30px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        &__button {
+            width: 240px;
+            line-height: 50px;
+        }
+
+        &__image {
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: toRem(42);
+        padding-top: toRem(38);
+        padding-bottom: toRem(40);
+
+        &__text {
+            margin-left: span(2 of 8);
+        }
+
+        h2 {
+            font-size: toRem(25);
+        }
+
+        p {
+            line-height: toRem(32);
+            font-size: toRem(16);
+            margin-bottom: toRem(20);
+        }
+
+        &__button {
+            width: toRem(240);
+            margin-left: span(2 of 8);
+            line-height: toRem(50);
+            border-radius:toRem(2);
+            font-size: toRem(14);
+        }
+
+        &__image {
+            display: block;
+            position: absolute;
+            left: span(4.8 of 8);
+
+            img {
+                width: toRem(372);
+            }
+        }
+    }
+}

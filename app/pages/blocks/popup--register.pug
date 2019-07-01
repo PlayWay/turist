@@ -1,0 +1,42 @@
++b.popup--register.sl--scrollable
+    +e.body
+        +e.form.form__.--registration
+            +e.body--popup
+                +e.title.--registration Регистрация
+                +e.line
+                    +e.LABEL.field-name(for="name") ФИО
+                    +e.input.input.--form-popup.--black
+                        input(placeholder="Иванов Иван Иванович" id="name")
+                +e.line
+                    +e.LABEL.field-name(for="email") Email
+                    +e.input.input.--form-popup.--black
+                        input(placeholder="example@gmail.com" id="email")
+                +e.line
+                    +e.LABEL.field-name(for="phone") Телефон
+                    +e.LABEL.input.input.--form-popup.--black
+                        input(placeholder="Пароль" id="phone")
+                +e.line
+                    +e.LABEL.field-name(for="password") Пароль
+                    +e.LABEL.input.input.--form-popup.--black
+                        input(placeholder="Пароль" id="password")
+                +e.BUTTON.button--registration.button--blue Зарегистрироваться
+                +e.policy
+                    p Нажимая “Зарегистрироваться”, вы даете согласие
+                    a(href="#") на обработку персональных данных
+            +e.BUTTON.button--close.button--close(type="button")
+                span
+            +e.preloader.preloader
+                +e.spinner.spinner__
+                    +e.line
+                        +e.cog
+                            +e.cog-inner--left
+                        +e.ticker
+                            +e.cog-inner--center
+                        +e.cog
+                            +e.coh-inner--right
+            +e.response.response__
+                +e.wrapper
+                    div
+                    span Регистрация завершена
+                    p Войдите в личный кабинет или закройте сообщение
+    +e.close

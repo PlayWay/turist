@@ -1,0 +1,362 @@
+@media (min-width: 1200px) {
+    .button {
+        transition: .2s ease;
+
+        &--blue {
+            &:hover {
+                background-color: #7BABF3;
+            }
+        }
+
+        &--underline-blue {
+            &:active {
+                color: #9170AA;
+                border-color: #9170AA;
+            }
+
+            &:hover {
+                color: #95C1F3;
+            }
+        }
+    }
+
+    .checkbox {
+        transition: .2s ease;
+
+        &:hover {
+            border-color: #FFE082;
+        }
+    }
+
+    .score-field__radio {
+        span:hover {
+            border: toRem(3) solid #FFE082;
+            border-radius: toRem(2);
+        }
+    }
+
+    .link {
+        &--underline-blue {
+            &:hover {
+                color: #95C1F3;
+            }
+        }
+    }
+
+    .view {
+        transition: .2s ease;
+
+        span:hover {
+            &:before {
+                border-color: #E1E1E1;
+                color: #E1E1E1;
+            }
+
+            &:after {
+                border-color: #E1E1E1;
+            }
+        }
+    }
+
+    .nav {
+        &__item {
+            &--toggle {
+                &:hover  {
+                    background-color: transparent;
+
+                    .nav__button {
+                        &:before {
+                            display: block;
+                        }
+
+                        &--toggle {
+                            color: #EFD690;
+                        }
+                    }
+
+                    .nav__tools {
+                        display: block;
+                    }
+
+                    .nav__submenu {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            transition: .2s ease;
+            &--toggle {
+                &:hover {
+                    color: #FFE082;
+                }
+            }
+
+            &--submenu {
+                &:hover {
+                    border-color: rgba(0,0,0,0.25);
+                }
+            }
+        }
+
+        &__link {
+            &--menu {
+                &:hover {
+                    color: #FFE082;
+                }
+            }
+
+            &:hover:not(.nav__link--all-cities):not(.nav__link--menu) {
+                border-color: rgba(0,0,0,0.25);
+            }
+        }
+    }
+
+    .city {
+
+        h3 {
+            transition: .4s ease;
+        }
+
+        &:hover {
+            h3 {
+                color: $yellow;
+                border-color: $yellow;
+            }
+        }
+        &__tag {
+            transition: .2s ease;
+
+            &:hover {
+                background-color: #FFE082;
+                color: #3C3C3C;
+                border-color: #FFE082;
+            }
+        }
+    }
+
+    .footer {
+        &__item {
+
+
+            a {
+                border-bottom: 1px solid transparent;
+                box-sizing: border-box;
+                transition: .2s ease;
+                transition-property: border;
+
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+
+    .search {
+        &__item {
+            transition: .3s ease;
+
+            &--blue {
+                &:hover {
+                    background-color: #fff;
+
+                    .search__title {
+                        color: $black;
+
+                        &:before {
+                            color: rgba(0, 0, 0, 0.3);
+                        }
+                    }
+
+                    .search__info {
+                        color: rgba(22, 33, 51, 0.5);
+                    }
+
+                    .search__address--blue {
+                        color: rgba($grey,0.3);
+                    }
+
+                    &:before {
+                        display: block;
+                    }
+                }
+            }
+
+            &--index-search {
+                &:hover {
+                    background-color: $yellow;
+
+
+                    &:before {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            &--index-search {
+                transition: .3s ease;
+                transition-property: background-color;
+                &:hover {
+                    background-color: #2275d7;
+                }
+            }
+        }
+
+        &__popular {
+            a {
+                transition: .3s ease;
+                transition-property: color,border-color;
+                &:hover {
+                    color: $yellow;
+                    border-color: $yellow;
+                }
+            }
+        }
+    }
+
+    .header {
+        &__button {
+            transition: .2s ease;
+
+            &:before {
+                transition: .2s ease;
+            }
+
+            &--entry {
+
+                &:hover {
+                    color: #FFE082;
+
+                    &:before {
+                        color: #FFE082;
+                    }
+                }
+            }
+
+            &--blue-search {
+
+                &:hover {
+                    color: #FFE082;
+
+                    &:before {
+                        color: #FFE082;
+                    }
+                }
+            }
+        }
+    }
+
+    .form {
+        transition: .2s ease;
+
+        &__forgot {
+            span:hover {
+                border-color: rgba(#4A90E2,0.5);
+            }
+        }
+
+        &__button {
+            &--call-registration {
+
+                &:hover {
+                    border-color: rgba(#4A90E2,0.5);
+                }
+            }
+        }
+    }
+
+    .news {
+        &__button {
+            transition: .2s ease;
+            &:hover {
+                border-color: #4D94FD;
+                background-color: #4D94FD;
+                color: #fff;
+                box-shadow: 0px 5px 10px rgba(59, 122, 219, 0.3);
+            }
+        }
+
+        &__card {
+            &:after {
+                content: '';
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.4);
+                transition: .3s ease;
+                transition-property: opacity;
+            }
+
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .hotel {
+        &--card {
+            &:hover {
+                .hotel__title {
+                    border-color: #6BA3F7;
+                }
+            }
+        }
+    }
+
+    .add-hotel {
+        &__button {
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    .select {
+        &__option {
+            &:hover {
+                background-color: rgba(107, 163, 247, 0.1);
+            }
+        }
+    }
+
+    .text {
+        &--article {
+            a {
+                transition: .2s ease;
+                transition-property: color,border-color;
+
+                &:hover {
+                    color: #95C1F3;
+                    border-color: #95C1F3;
+                }
+            }
+        }
+    }
+
+    .icon {
+
+        &:after {
+            transition: .1s ease;
+            transition-property: opacity;
+        }
+
+        &:hover {
+            z-index: 2;
+
+            &:after {
+                opacity: 1;
+                transition-duration: .3s;
+                pointer-events: all;
+            }
+        }
+    }
+}
